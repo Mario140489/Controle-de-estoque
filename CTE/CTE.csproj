@@ -56,6 +56,30 @@
     <Compile Include="FrmCategoria.Designer.cs">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovCompras.Designer.cs">
+      <DependentUpon>FrmMovCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubCategoria.Designer.cs">
+      <DependentUpon>FrmSubCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoPagamento.Designer.cs">
+      <DependentUpon>FrmTipoPagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +90,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCategoria.resx">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovCompras.resx">
+      <DependentUpon>FrmMovCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubCategoria.resx">
+      <DependentUpon>FrmSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoPagamento.resx">
+      <DependentUpon>FrmTipoPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -94,6 +130,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\ControleDeEstoque\Ferramentas\Ferramentas.csproj">
+      <Project>{4a09cf67-5d5f-4e30-88d8-c6c30304ca4d}</Project>
+      <Name>Ferramentas</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BBL\BBL.csproj">
       <Project>{454179bb-e1a3-4f59-8ae6-59381d80c02c}</Project>
       <Name>BBL</Name>
