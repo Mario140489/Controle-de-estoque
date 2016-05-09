@@ -33,10 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
-    <Reference Include="DevComponents.Instrumentation, Version=12.7.0.10, Culture=neutral, PublicKeyToken=f90dc37c26666a67" />
+    <Reference Include="DevComponents.Charts.Design, Version=12.8.0.3, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=12.8.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.8.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.8.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.8.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.8.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=12.8.0.3, Culture=neutral, PublicKeyToken=f90dc37c26666a67, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.8.0.3, Culture=neutral, PublicKeyToken=26d81176cfa2b486, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=12.8.0.3, Culture=neutral, PublicKeyToken=055db68f670cfeab, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -132,6 +138,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Menu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cadeado-img-edit100x100.png" />
+    <Content Include="Resources\usuario-img-edit100x100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
