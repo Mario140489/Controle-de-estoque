@@ -12,7 +12,7 @@ namespace DAL
         {
             get
             {
-                return "Data Source=locahost;Initial Catalog=Estoque;Persist Security Info=True;User ID=sa;Password=123";
+                return "Data Source=LOCALHOST;Initial Catalog=Estoque;Persist Security Info=True;User ID=sa;Password=123";
             }
         }
     }
