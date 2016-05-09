@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace modelo
+namespace Modelo
 {
-    class ModeloSubcategoria
+    public class ModeloSubcategoria
     {
         private int scat_cod;
             

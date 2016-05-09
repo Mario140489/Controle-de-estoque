@@ -67,5 +67,11 @@ namespace CTE
         {
             AbreMenu();
         }
+
+        private void metroTileItem4_Click(object sender, EventArgs e)
+        {
+            FrmProduto produto = new FrmProduto();
+            produto.ShowDialog();
+        }
     }
 }

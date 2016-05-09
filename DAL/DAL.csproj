@@ -40,10 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DadosDaConexão.cs" />
+    <Compile Include="DadosDaConexao.cs" />
     <Compile Include="DalCategoria.cs" />
     <Compile Include="DalConexao.cs" />
     <Compile Include="DalProduto.cs" />
+    <Compile Include="DalSubcategoria.cs" />
+    <Compile Include="DalUnidadeMedida.cs" />
+    <Compile Include="DalUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

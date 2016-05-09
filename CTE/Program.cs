@@ -16,7 +16,13 @@ namespace CTE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCategoria());
+
+            FrmLogin login = new FrmLogin();
+
+            //if (login.ShowDialog() == DialogResult.OK)
+            //{
+            Application.Run(new Menu());
+            //}
         }
     }
 }
