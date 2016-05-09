@@ -43,6 +43,7 @@
     <Compile Include="DadosDaConexão.cs" />
     <Compile Include="DalCategoria.cs" />
     <Compile Include="DalConexao.cs" />
+    <Compile Include="DalProduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
