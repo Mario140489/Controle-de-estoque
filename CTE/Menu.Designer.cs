@@ -58,7 +58,7 @@
             this.itemContainer1,
             this.itemContainer2});
             this.metroTilePanel1.Location = new System.Drawing.Point(1, 1);
-            this.metroTilePanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTilePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTilePanel1.Name = "metroTilePanel1";
             this.metroTilePanel1.Size = new System.Drawing.Size(1749, 686);
             this.metroTilePanel1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
@@ -114,6 +114,7 @@
             // 
             // 
             this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem3.Click += new System.EventHandler(this.metroTileItem3_Click);
             // 
             // metroTileItem4
             // 
@@ -135,6 +136,7 @@
             // 
             // 
             this.metroTileItem2.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem2.Click += new System.EventHandler(this.metroTileItem2_Click);
             // 
             // itemContainer2
             // 
@@ -180,7 +182,7 @@
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.buttonX2.Location = new System.Drawing.Point(1, 651);
-            this.buttonX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonX2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonX2.Name = "buttonX2";
             this.buttonX2.Size = new System.Drawing.Size(97, 36);
             this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
@@ -200,7 +202,7 @@
             this.ClientSize = new System.Drawing.Size(1751, 689);
             this.Controls.Add(this.buttonX2);
             this.Controls.Add(this.metroTilePanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Menu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

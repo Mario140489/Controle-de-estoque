@@ -41,16 +41,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BBLCategoria.cs" />
+    <Compile Include="BLLFornecedor.cs" />
     <Compile Include="BLLProduto.cs" />
     <Compile Include="BLLSubcategoria.cs" />
     <Compile Include="BLLUnidadeMedida.cs" />
     <Compile Include="BLLUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BLLTipoPagamento.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{c73e623f-1848-49e9-8ecc-ebcf1eb2e15e}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ferramentas\Ferramentas.csproj">
+      <Project>{9305982e-8d02-4269-9bc6-1be671ef3f82}</Project>
+      <Name>Ferramentas</Name>
     </ProjectReference>
     <ProjectReference Include="..\modelo\Modelo.csproj">
       <Project>{a2d954a9-8110-417e-b9fa-cf4908d222ef}</Project>

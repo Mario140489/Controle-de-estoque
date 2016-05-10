@@ -36,16 +36,18 @@ namespace DAL
             obj.ProCod = Convert.ToInt32(cmd.ExecuteScalar());
             conexao.Desconecta();
         }
+
         public void Excluir(int codigo)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conexao.objetoConexao;
-            cmd.CommandText = "delete from produto where (pro_cod) = (@codigo)";
+            cmd.CommandText = "delete from produto where pro_cod = @codigo";
             cmd.Parameters.AddWithValue("@codigo", codigo);
             conexao.Conectar();
             cmd.ExecuteNonQuery();
             conexao.Desconecta();
         }
+
         public void Alterar(ModeloProduto obj)
         {
             SqlCommand cmd = new SqlCommand();

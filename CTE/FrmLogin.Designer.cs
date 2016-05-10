@@ -127,6 +127,7 @@
             this.txtSenha.PreventEnterBeep = true;
             this.txtSenha.Size = new System.Drawing.Size(177, 30);
             this.txtSenha.TabIndex = 9;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtUsuario
             // 
@@ -157,6 +158,7 @@
             this.btnSair.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnSair.TabIndex = 1;
             this.btnSair.Text = "Cancelar";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnEntrar
             // 
@@ -168,6 +170,7 @@
             this.btnEntrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEntrar.TabIndex = 0;
             this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // FrmLogin
             // 

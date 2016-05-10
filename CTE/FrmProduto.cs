@@ -76,7 +76,7 @@ namespace CTE
             try
             {
                 //combo da subcategoria
-                BBLSubCategoria sbll = new BBLSubCategoria(cx);
+                BLLSubcategoria sbll = new BLLSubcategoria(cx);
                 cbSubcategoria.DataSource = sbll.LocalizarPorCategoria((int)cbCategoria.SelectedValue);
                 cbSubcategoria.DisplayMember = "scat_nome";
                 cbSubcategoria.ValueMember = "scat_cod";
@@ -106,11 +106,11 @@ namespace CTE
         //BTN CANCELAR
         private void btcancelar_Click(object sender, EventArgs e)
         {
-            /*
+            
             this.limpatela();
             superTabControl1.SelectedTabIndex = 0;
-            this.altbt(1);*/
-            this.Close();
+            this.altbt(1);
+            //this.Close();
         }
 
         //BTN SALVAR

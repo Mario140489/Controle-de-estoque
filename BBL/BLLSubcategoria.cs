@@ -10,11 +10,11 @@ using System.Data.SqlClient;
 
 namespace BBL
 {
-    public class BBLSubCategoria
+    public class BLLSubcategoria
     {
         private DalConexao conexao;
 
-        public BBLSubCategoria(DalConexao cx)
+        public BLLSubcategoria(DalConexao cx)
         {
             this.conexao = cx;
         }
