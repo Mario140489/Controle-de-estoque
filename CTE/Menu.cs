@@ -67,5 +67,23 @@ namespace CTE
         {
             AbreMenu();
         }
+
+        private void metroTileItem4_Click(object sender, EventArgs e)
+        {
+            FrmProduto produto = new FrmProduto();
+            produto.ShowDialog();
+        }
+
+        private void metroTileItem3_Click(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+            login.ShowDialog();
+        }
+
+        private void metroTileItem2_Click(object sender, EventArgs e)
+        {
+            FrmFornecedor fornecedor = new FrmFornecedor();
+            fornecedor.ShowDialog();
+        }
     }
 }

@@ -92,7 +92,7 @@ namespace CTE
             {
                 ModeloCategoria md = new ModeloCategoria();
                 md.CatNome = txtdesc.Text;
-                DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+                DalConexao cx = new DalConexao(DadosDaConexao.StringDeConexao);
                 BBLCategoria bll = new BBLCategoria(cx);
 
                 if (this.operacao == 1)
@@ -127,7 +127,7 @@ namespace CTE
                 if (MessageBox.Show("Deseja realmente excluir essa categoria?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
                 {
                   
-                    DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+                    DalConexao cx = new DalConexao(DadosDaConexao.StringDeConexao);
                     BBLCategoria bll = new BBLCategoria(cx);
                     bll.Excluir(Convert.ToInt32(txtcod.Text));
                     this.limpatela();
@@ -145,7 +145,7 @@ namespace CTE
         private void buttonX1_Click(object sender, EventArgs e)
         {
             
-            DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+            DalConexao cx = new DalConexao(DadosDaConexao.StringDeConexao);
             BBLCategoria bll = new BBLCategoria(cx);
             dataGridViewX1.DataSource = bll.localizar(txtpesquisa.Text);
             this.altbt(3);
@@ -160,7 +160,7 @@ namespace CTE
                 
                if (codigo != 0)
                      {
-                DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+                DalConexao cx = new DalConexao(DadosDaConexao.StringDeConexao);
                          BBLCategoria bll = new BBLCategoria(cx);
                          ModeloCategoria modelo = bll.CarragaModeloCategoria(codigo);
                          txtcod.Text = modelo.CatCod.ToString();

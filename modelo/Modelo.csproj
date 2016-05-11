@@ -7,7 +7,7 @@
     <ProjectGuid>{A2D954A9-8110-417E-B9FA-CF4908D222EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>modelo</RootNamespace>
+    <RootNamespace>Modelo</RootNamespace>
     <AssemblyName>modelo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,7 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModeloCategoria.cs" />
+    <Compile Include="ModeloFornecedor.cs" />
+    <Compile Include="ModeloProduto.cs" />
     <Compile Include="ModeloSubcategoria.cs" />
+    <Compile Include="ModeloTipoPagamento.cs" />
+    <Compile Include="ModeloUnidadeMedida.cs" />
+    <Compile Include="ModeloUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

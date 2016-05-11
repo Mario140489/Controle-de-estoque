@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-     public class DadosDaConexão
+     public class DadosDaConexao
     {
-       public static string StringDeConexão
+       public static string StringDeConexao
         {
             get
             {
-                return "Data Source=.\\SQLEXPRESS;Initial Catalog=Estoque;Persist Security Info=True;User ID=sa;Password=123";
+                return "Data Source=LOCALHOST;Initial Catalog=Estoque;Persist Security Info=True;User ID=sa;Password=123";
             }
         }
     }
