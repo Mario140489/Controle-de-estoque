@@ -1,16 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevComponents.DotNetBar;
 
 namespace CTE
 {
-    public partial class Menu : Form
+    public partial class Menu : DevComponents.DotNetBar.Metro.MetroForm
     {
         public Menu()
         {
@@ -21,51 +20,36 @@ namespace CTE
         {
             FrmCategoria cat = new FrmCategoria();
             cat.ShowDialog();
-            cat.Dispose();
-
-            /*FrmCategoria cat = null;
-            cat = (FrmCategoria)this.MdiChildren.Where
-                (x => x is FrmCategoria).FirstOrDefault();
-            if (cat != null)
-            {
-                cat.BringToFront();
-                metroTilePanel1.Visible = false;
-                FechaMenu();
-            }
-            else
-            {
-                cat = new FrmCategoria();
-                cat.MdiParent = this;
-                cat.Show();
-                metroTilePanel1.Visible = false;
-                FechaMenu();
-            }*/
-
-
         }
 
-       
+        private void metroTileItem2_Click(object sender, EventArgs e)
+        {
+            FrmSubCategoria scat = new FrmSubCategoria();
+            scat.ShowDialog();
+        }
+
+        private void metroTileItem3_Click(object sender, EventArgs e)
+        {
+            FrmTipoPagamento tdp = new FrmTipoPagamento();
+            tdp.ShowDialog();
+        }
+
+        private void metroTileItem4_Click(object sender, EventArgs e)
+        {
+            FrmMovCompras Mcp = new FrmMovCompras();
+            Mcp.ShowDialog();
+        }
+
+        private void metroTileItem5_Click(object sender, EventArgs e)
+        {
+            FrmCliente fc = new FrmCliente();
+            fc.ShowDialog();
+            fc.Dispose();
+        }
 
         private void Menu_Load(object sender, EventArgs e)
         {
 
-        }
-
-      
-        public void FechaMenu()
-        {
-            metroTilePanel1.Visible = false;
-            buttonX2.Visible = true;
-        }
-        public void AbreMenu()
-        {
-            metroTilePanel1.Visible = true;
-            buttonX2.Visible = false;
-        }
-
-        private void buttonX2_Click(object sender, EventArgs e)
-        {
-            AbreMenu();
         }
     }
 }

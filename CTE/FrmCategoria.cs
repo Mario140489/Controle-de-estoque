@@ -80,9 +80,9 @@ namespace CTE
 
         private void btcancelar_Click(object sender, EventArgs e)
         {
-            this.altbt(1);
+            
             this.limpatela();
-            superTabControl1.SelectedTabIndex = 1;
+            superTabControl1.SelectedTabIndex = 0;
             this.altbt(1);
         }
 
@@ -97,18 +97,24 @@ namespace CTE
 
                 if (this.operacao == 1)
                 {
-                    MessageBox.Show("teste1");
+                    
                     bll.Incluir(md);
                     txtcod.Text = md.CatCod.ToString();
-                  
+                    this.limpatela();
+                    txtdesc.Focus();
+                    MessageBox.Show("Salvo com Sucesso", "Aviso", MessageBoxButtons.OK,MessageBoxIcon.Information);
+
                 }
                 else
                 {
-                    MessageBox.Show("teste2");
+                    
                     md.CatCod = Convert.ToInt32(txtcod.Text);
                     bll.Alterar(md);
                     this.limpatela();
-
+                    superTabControl1.SelectedTabIndex = 0;
+                    this.altbt(1);
+                    dataGridViewX1.DataSource = bll.localizar(txtpesquisa.Text);
+                   MessageBox.Show("Salvo com Sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
@@ -119,7 +125,7 @@ namespace CTE
 
         }
 
-        private void btexcluir_Click(object sender, EventArgs e)
+        public void btexcluir_Click(object sender, EventArgs e)
         {
             try
             {
@@ -132,12 +138,14 @@ namespace CTE
                     bll.Excluir(Convert.ToInt32(txtcod.Text));
                     this.limpatela();
                     this.altbt(1);
+                    superTabControl1.SelectedTabIndex = 0;
+                    dataGridViewX1.DataSource = bll.localizar(txtpesquisa.Text);
                 }
 
             }
             catch
             {
-                MessageBox.Show("impossivel excluir");
+                MessageBox.Show("Deve estár selecionado o registro para pode excluilo","Erro",MessageBoxButtons.OK ,MessageBoxIcon.Error);
                 this.altbt(1);
             }
         }
@@ -148,24 +156,47 @@ namespace CTE
             DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
             BBLCategoria bll = new BBLCategoria(cx);
             dataGridViewX1.DataSource = bll.localizar(txtpesquisa.Text);
+            this.carrega();
             this.altbt(3);
       
         }
 
-        private void dataGridViewX1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        public void acessadatagrid(object sender, DataGridViewCellEventArgs e)
         {
-            
-         
-                codigo = Convert.ToInt32(dataGridViewX1.Rows[e.RowIndex].Cells[0].Value);
-                
-               if (codigo != 0)
+            codigo = Convert.ToInt32(dataGridViewX1.Rows[e.RowIndex].Cells[0].Value);
+
+            if (codigo != 0)
+            {
+                DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+                BBLCategoria bll = new BBLCategoria(cx);
+                ModeloCategoria modelo = bll.CarragaModeloCategoria(codigo);
+                txtcod.Text = modelo.CatCod.ToString();
+                txtdesc.Text = modelo.CatNome;
+                superTabControl1.SelectedTabIndex = 1;
+                this.altbt(3);
+                this.operacao = 2;
+            }
+            else
+            {
+
+                this.limpatela();
+                this.altbt(1);
+            }
+        }
+        public void dataGridViewX1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+            codigo = Convert.ToInt32(dataGridViewX1.Rows[e.RowIndex].Cells[0].Value);
+
+            if (codigo != 0)
                      {
                 DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
                          BBLCategoria bll = new BBLCategoria(cx);
                          ModeloCategoria modelo = bll.CarragaModeloCategoria(codigo);
                          txtcod.Text = modelo.CatCod.ToString();
                          txtdesc.Text = modelo.CatNome;
-                         superTabControl1.SelectedTabIndex = 1;
+                superTabControl1.SelectedTabIndex = 1;
                 this.altbt(3);
                 this.operacao = 2;
             }
@@ -180,9 +211,72 @@ namespace CTE
 
         }
 
-        private void dataGridViewX1_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dataGridViewX1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                if (e.RowIndex != -1)
+                {
+                    codigo = Convert.ToInt32(dataGridViewX1.Rows[e.RowIndex].Cells[0].Value);
+
+                    if (codigo != 0)
+                    {
+                        DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+                        BBLCategoria bll = new BBLCategoria(cx);
+                        ModeloCategoria modelo = bll.CarragaModeloCategoria(codigo);
+                        txtcod.Text = modelo.CatCod.ToString();
+                        txtdesc.Text = modelo.CatNome;
+                        dataGridViewX2.DataSource = bll.localizarsubcat(codigo);
+                        this.altbt(3);
+                        this.operacao = 2;
+                    }
+                    else
+                    {
+
+                        this.limpatela();
+                        this.altbt(1);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
 
         }
+
+        private void buttonX2_Click(object sender, EventArgs e)
+        {
+            FrmSubCategoria scat = new FrmSubCategoria();
+            scat.ShowDialog();
+            scat.Dispose();
+            
+        }
+
+       public void carrega()
+        {
+            dataGridViewX1.Rows[0].Selected = true;
+            codigo = Convert.ToInt32(dataGridViewX1.Rows[0].Cells[0].Value);
+            if (codigo != 0)
+            {
+                DalConexao cx = new DalConexao(DadosDaConexão.StringDeConexão);
+                BBLCategoria bll = new BBLCategoria(cx);
+                ModeloCategoria modelo = bll.CarragaModeloCategoria(codigo);
+                txtcod.Text = modelo.CatCod.ToString();
+                txtdesc.Text = modelo.CatNome;
+                dataGridViewX2.DataSource = bll.localizarsubcat(codigo);
+                this.altbt(3);
+                this.operacao = 2;
+            }
+            else
+            {
+
+                this.limpatela();
+                this.altbt(1);
+            }
+        }
+        }
+
     }
-}
+    
+

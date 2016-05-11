@@ -4,13 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace modelo
+namespace Modelo
 {
-    class ModeloSubcategoria
+      public class ModeloSubCategoria
     {
+        public ModeloSubCategoria()
+        {
+            this.SCatCod = 0;
+            this.SCatNome = "";
+            this.CatCod = 0;
+        }
+
+        public ModeloSubCategoria(int SCatCod, string SCatNome, int CatCod)
+        {
+
+            this.SCatCod = scat_cod;
+            this.SCatNome = scat_nome;
+            this.CatCod = cat_cod;
+        }
         private int scat_cod;
-            
-        public int ScatCod
+
+        public int SCatCod
         {
             get { return this.scat_cod; }
             set { this.scat_cod = value; }
@@ -18,7 +32,7 @@ namespace modelo
 
         private string scat_nome;
 
-        public string ScatNome
+        public string SCatNome
         {
             get { return this.scat_nome; }
             set { this.scat_nome = value; }
@@ -31,6 +45,5 @@ namespace modelo
             get { return this.cat_cod; }
             set { this.cat_cod = value; }
         }
-
     }
 }

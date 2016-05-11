@@ -75,6 +75,13 @@ namespace DAL
             return modelo;
 
         }
-
+        public DataTable localizarsubcat (int codigo)
+        {
+            DataTable tabelasubcat = new DataTable();
+            SqlDataAdapter dasub = new SqlDataAdapter("select scat.scat_nome from categoria c inner join subcategoria scat on (c.cat_cod = scat.cat_cod) where c.cat_cod =" + codigo , conexao.StringConexao);
+            dasub.Fill(tabelasubcat);
+            return tabelasubcat;
+            
+        }
     }
 }

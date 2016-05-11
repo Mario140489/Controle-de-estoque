@@ -55,6 +55,12 @@ namespace BBL
             DalCategoria Dalobj = new DalCategoria(conexao);
             return Dalobj.CarragaModeloCategoria(codigo);
         }
+        public DataTable localizarsubcat(int codigo)
+        {
+            DalCategoria Dalbjscat = new DalCategoria(conexao);
+            return Dalbjscat.localizarsubcat(codigo);
+
+        }
     }
    
 
