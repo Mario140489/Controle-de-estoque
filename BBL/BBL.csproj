@@ -44,7 +44,10 @@
     <Compile Include="BBLSubCategoria.cs" />
     <Compile Include="BBLCompra.cs" />
     <Compile Include="BLLCliente.cs" />
+    <Compile Include="BLLFornecedor.cs" />
+    <Compile Include="BLLProduto.cs" />
     <Compile Include="BLLTipoPagamento.cs" />
+    <Compile Include="BLLUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

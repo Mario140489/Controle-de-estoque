@@ -45,8 +45,11 @@
     <Compile Include="DALCliente.cs" />
     <Compile Include="DALCompra.cs" />
     <Compile Include="DalConexao.cs" />
+    <Compile Include="DalFornecedor.cs" />
+    <Compile Include="DalProduto.cs" />
     <Compile Include="DalSubCategoria.cs" />
     <Compile Include="DALTipoPagamento.cs" />
+    <Compile Include="DalUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

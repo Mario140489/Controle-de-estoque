@@ -100,10 +100,9 @@
             this.Opções.Controls.Add(this.btnovo);
             this.Opções.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Opções.DisabledBackColor = System.Drawing.Color.Empty;
-            this.Opções.Location = new System.Drawing.Point(2, 333);
-            this.Opções.Margin = new System.Windows.Forms.Padding(4);
+            this.Opções.Location = new System.Drawing.Point(2, 271);
             this.Opções.Name = "Opções";
-            this.Opções.Size = new System.Drawing.Size(789, 87);
+            this.Opções.Size = new System.Drawing.Size(592, 71);
             // 
             // 
             // 
@@ -141,10 +140,9 @@
             this.btcancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btcancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btcancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btcancelar.Location = new System.Drawing.Point(404, 5);
-            this.btcancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btcancelar.Location = new System.Drawing.Point(303, 4);
             this.btcancelar.Name = "btcancelar";
-            this.btcancelar.Size = new System.Drawing.Size(111, 47);
+            this.btcancelar.Size = new System.Drawing.Size(83, 38);
             this.btcancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.btcancelar.Symbol = "";
             this.btcancelar.TabIndex = 2;
@@ -157,11 +155,10 @@
             this.btexcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btexcluir.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btexcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btexcluir.Location = new System.Drawing.Point(556, 4);
-            this.btexcluir.Margin = new System.Windows.Forms.Padding(4);
+            this.btexcluir.Location = new System.Drawing.Point(417, 3);
             this.btexcluir.Name = "btexcluir";
             this.btexcluir.PopupSide = DevComponents.DotNetBar.ePopupSide.Bottom;
-            this.btexcluir.Size = new System.Drawing.Size(111, 48);
+            this.btexcluir.Size = new System.Drawing.Size(83, 39);
             this.btexcluir.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.btexcluir.Symbol = "";
             this.btexcluir.TabIndex = 3;
@@ -174,10 +171,9 @@
             this.btsalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btsalvar.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btsalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btsalvar.Location = new System.Drawing.Point(249, 4);
-            this.btsalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.btsalvar.Location = new System.Drawing.Point(187, 3);
             this.btsalvar.Name = "btsalvar";
-            this.btsalvar.Size = new System.Drawing.Size(111, 47);
+            this.btsalvar.Size = new System.Drawing.Size(83, 38);
             this.btsalvar.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.btsalvar.Symbol = "";
             this.btsalvar.TabIndex = 1;
@@ -190,10 +186,9 @@
             this.btnovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnovo.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.btnovo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnovo.Location = new System.Drawing.Point(100, 4);
-            this.btnovo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnovo.Location = new System.Drawing.Point(75, 3);
             this.btnovo.Name = "btnovo";
-            this.btnovo.Size = new System.Drawing.Size(111, 48);
+            this.btnovo.Size = new System.Drawing.Size(83, 39);
             this.btnovo.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.btnovo.Symbol = "";
             this.btnovo.TabIndex = 0;
@@ -219,17 +214,16 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.superTabControl1.Location = new System.Drawing.Point(2, 0);
-            this.superTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.superTabControl1.Name = "superTabControl1";
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(789, 325);
+            this.superTabControl1.Size = new System.Drawing.Size(592, 264);
             this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 2;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -243,10 +237,9 @@
             // 
             this.superTabControlPanel1.Controls.Add(this.Consultar);
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 38);
-            this.superTabControlPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 35);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(789, 287);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(592, 229);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -261,10 +254,9 @@
             this.Consultar.Controls.Add(this.txtpesquisa);
             this.Consultar.Controls.Add(this.dataGridViewX1);
             this.Consultar.DisabledBackColor = System.Drawing.Color.Empty;
-            this.Consultar.Location = new System.Drawing.Point(4, 4);
-            this.Consultar.Margin = new System.Windows.Forms.Padding(4);
+            this.Consultar.Location = new System.Drawing.Point(3, 3);
             this.Consultar.Name = "Consultar";
-            this.Consultar.Size = new System.Drawing.Size(781, 273);
+            this.Consultar.Size = new System.Drawing.Size(586, 222);
             // 
             // 
             // 
@@ -304,10 +296,9 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
             this.buttonX1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonX1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
-            this.buttonX1.Location = new System.Drawing.Point(608, 31);
-            this.buttonX1.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonX1.Location = new System.Drawing.Point(456, 25);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(162, 28);
+            this.buttonX1.Size = new System.Drawing.Size(122, 23);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.buttonX1.SubItemsExpandWidth = 8;
             this.buttonX1.Symbol = "59520";
@@ -324,10 +315,9 @@
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(87, 4);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4);
+            this.labelX2.Location = new System.Drawing.Point(65, 3);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(68, 14);
+            this.labelX2.Size = new System.Drawing.Size(51, 11);
             this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.labelX2.TabIndex = 9;
             this.labelX2.Text = "Descrição";
@@ -341,10 +331,9 @@
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.labelX1.Location = new System.Drawing.Point(-4, 31);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelX1.Location = new System.Drawing.Point(-3, 25);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(83, 28);
+            this.labelX1.Size = new System.Drawing.Size(62, 23);
             this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.labelX1.TabIndex = 8;
             this.labelX1.Text = "Pesquisar:";
@@ -360,12 +349,11 @@
             this.txtpesquisa.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtpesquisa.DisabledBackColor = System.Drawing.Color.White;
             this.txtpesquisa.ForeColor = System.Drawing.Color.Black;
-            this.txtpesquisa.Location = new System.Drawing.Point(87, 34);
-            this.txtpesquisa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpesquisa.Location = new System.Drawing.Point(65, 28);
             this.txtpesquisa.MaxLength = 30;
             this.txtpesquisa.Name = "txtpesquisa";
             this.txtpesquisa.PreventEnterBeep = true;
-            this.txtpesquisa.Size = new System.Drawing.Size(513, 22);
+            this.txtpesquisa.Size = new System.Drawing.Size(385, 20);
             this.txtpesquisa.TabIndex = 7;
             // 
             // dataGridViewX1
@@ -407,8 +395,7 @@
             this.dataGridViewX1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridViewX1.EnableHeadersVisualStyles = false;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(157)))));
-            this.dataGridViewX1.Location = new System.Drawing.Point(4, 65);
-            this.dataGridViewX1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewX1.Location = new System.Drawing.Point(3, 53);
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -423,7 +410,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewX1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewX1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewX1.Size = new System.Drawing.Size(766, 181);
+            this.dataGridViewX1.Size = new System.Drawing.Size(574, 147);
             this.dataGridViewX1.TabIndex = 6;
             // 
             // Código
@@ -504,10 +491,9 @@
             // 
             this.superTabControlPanel2.Controls.Add(this.groupPanel1);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 38);
-            this.superTabControlPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 35);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(789, 287);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(592, 229);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -537,10 +523,9 @@
             this.groupPanel1.Controls.Add(this.txtNome);
             this.groupPanel1.Controls.Add(this.txtdesc);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel1.Location = new System.Drawing.Point(4, 4);
-            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(781, 273);
+            this.groupPanel1.Size = new System.Drawing.Size(586, 222);
             // 
             // 
             // 
@@ -575,41 +560,46 @@
             // cbUnidadeMedida
             // 
             this.cbUnidadeMedida.FormattingEnabled = true;
-            this.cbUnidadeMedida.Location = new System.Drawing.Point(622, 95);
+            this.cbUnidadeMedida.Location = new System.Drawing.Point(466, 77);
+            this.cbUnidadeMedida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbUnidadeMedida.Name = "cbUnidadeMedida";
-            this.cbUnidadeMedida.Size = new System.Drawing.Size(121, 24);
+            this.cbUnidadeMedida.Size = new System.Drawing.Size(92, 21);
             this.cbUnidadeMedida.TabIndex = 17;
             // 
             // cbSubcategoria
             // 
             this.cbSubcategoria.FormattingEnabled = true;
-            this.cbSubcategoria.Location = new System.Drawing.Point(622, 49);
+            this.cbSubcategoria.Location = new System.Drawing.Point(466, 40);
+            this.cbSubcategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbSubcategoria.Name = "cbSubcategoria";
-            this.cbSubcategoria.Size = new System.Drawing.Size(121, 24);
+            this.cbSubcategoria.Size = new System.Drawing.Size(92, 21);
             this.cbSubcategoria.TabIndex = 15;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(622, 48);
+            this.comboBox2.Location = new System.Drawing.Point(466, 39);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(92, 21);
             this.comboBox2.TabIndex = 16;
             // 
             // cbCategoria
             // 
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(622, 8);
+            this.cbCategoria.Location = new System.Drawing.Point(466, 6);
+            this.cbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(121, 24);
+            this.cbCategoria.Size = new System.Drawing.Size(92, 21);
             this.cbCategoria.TabIndex = 13;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(622, 8);
+            this.comboBox1.Location = new System.Drawing.Point(466, 6);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 15;
             // 
             // lblSubcategoria
@@ -618,9 +608,10 @@
             // 
             // 
             this.lblSubcategoria.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblSubcategoria.Location = new System.Drawing.Point(498, 52);
+            this.lblSubcategoria.Location = new System.Drawing.Point(374, 42);
+            this.lblSubcategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblSubcategoria.Name = "lblSubcategoria";
-            this.lblSubcategoria.Size = new System.Drawing.Size(100, 23);
+            this.lblSubcategoria.Size = new System.Drawing.Size(75, 19);
             this.lblSubcategoria.TabIndex = 14;
             this.lblSubcategoria.Text = "Subcategoria";
             // 
@@ -630,9 +621,10 @@
             // 
             // 
             this.lblCategoria.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblCategoria.Location = new System.Drawing.Point(498, 13);
+            this.lblCategoria.Location = new System.Drawing.Point(374, 11);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(75, 23);
+            this.lblCategoria.Size = new System.Drawing.Size(56, 19);
             this.lblCategoria.TabIndex = 12;
             this.lblCategoria.Text = "Categoria";
             // 
@@ -642,9 +634,10 @@
             // 
             // 
             this.lblUnidadeMedida.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblUnidadeMedida.Location = new System.Drawing.Point(498, 94);
+            this.lblUnidadeMedida.Location = new System.Drawing.Point(374, 76);
+            this.lblUnidadeMedida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblUnidadeMedida.Name = "lblUnidadeMedida";
-            this.lblUnidadeMedida.Size = new System.Drawing.Size(100, 23);
+            this.lblUnidadeMedida.Size = new System.Drawing.Size(75, 19);
             this.lblUnidadeMedida.TabIndex = 16;
             this.lblUnidadeMedida.Text = "Unidade Medida";
             // 
@@ -654,9 +647,10 @@
             // 
             // 
             this.lblQuantidade.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblQuantidade.Location = new System.Drawing.Point(5, 203);
+            this.lblQuantidade.Location = new System.Drawing.Point(4, 165);
+            this.lblQuantidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(75, 28);
+            this.lblQuantidade.Size = new System.Drawing.Size(56, 23);
             this.lblQuantidade.TabIndex = 10;
             this.lblQuantidade.Text = "Quantidade";
             // 
@@ -666,9 +660,10 @@
             // 
             // 
             this.lblValorVenda.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblValorVenda.Location = new System.Drawing.Point(5, 166);
+            this.lblValorVenda.Location = new System.Drawing.Point(4, 135);
+            this.lblValorVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblValorVenda.Name = "lblValorVenda";
-            this.lblValorVenda.Size = new System.Drawing.Size(75, 28);
+            this.lblValorVenda.Size = new System.Drawing.Size(56, 23);
             this.lblValorVenda.TabIndex = 8;
             this.lblValorVenda.Text = "Valor Venda";
             // 
@@ -678,9 +673,10 @@
             // 
             // 
             this.lblvalorPago.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblvalorPago.Location = new System.Drawing.Point(5, 129);
+            this.lblvalorPago.Location = new System.Drawing.Point(4, 105);
+            this.lblvalorPago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblvalorPago.Name = "lblvalorPago";
-            this.lblvalorPago.Size = new System.Drawing.Size(75, 28);
+            this.lblvalorPago.Size = new System.Drawing.Size(56, 23);
             this.lblvalorPago.TabIndex = 6;
             this.lblvalorPago.Text = "Valor Pago";
             // 
@@ -690,9 +686,10 @@
             // 
             // 
             this.lblNome.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblNome.Location = new System.Drawing.Point(5, 50);
+            this.lblNome.Location = new System.Drawing.Point(4, 41);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(75, 28);
+            this.lblNome.Size = new System.Drawing.Size(56, 23);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome";
             // 
@@ -703,10 +700,9 @@
             // 
             // 
             this.lblCod.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblCod.Location = new System.Drawing.Point(5, 8);
-            this.lblCod.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCod.Location = new System.Drawing.Point(4, 6);
             this.lblCod.Name = "lblCod";
-            this.lblCod.Size = new System.Drawing.Size(53, 28);
+            this.lblCod.Size = new System.Drawing.Size(40, 23);
             this.lblCod.TabIndex = 0;
             this.lblCod.Text = "Código:";
             // 
@@ -717,10 +713,9 @@
             // 
             // 
             this.lblDescricao.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblDescricao.Location = new System.Drawing.Point(5, 85);
-            this.lblDescricao.Margin = new System.Windows.Forms.Padding(4);
+            this.lblDescricao.Location = new System.Drawing.Point(4, 69);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(72, 28);
+            this.lblDescricao.Size = new System.Drawing.Size(54, 23);
             this.lblDescricao.TabIndex = 4;
             this.lblDescricao.Text = "Descrição";
             // 
@@ -735,12 +730,11 @@
             this.txtcod.DisabledBackColor = System.Drawing.Color.White;
             this.txtcod.Enabled = false;
             this.txtcod.ForeColor = System.Drawing.Color.Black;
-            this.txtcod.Location = new System.Drawing.Point(96, 12);
-            this.txtcod.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcod.Location = new System.Drawing.Point(72, 10);
             this.txtcod.MaxLength = 20;
             this.txtcod.Name = "txtcod";
             this.txtcod.PreventEnterBeep = true;
-            this.txtcod.Size = new System.Drawing.Size(66, 22);
+            this.txtcod.Size = new System.Drawing.Size(50, 20);
             this.txtcod.TabIndex = 1;
             // 
             // txtQuantidade
@@ -753,12 +747,11 @@
             this.txtQuantidade.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtQuantidade.DisabledBackColor = System.Drawing.Color.White;
             this.txtQuantidade.ForeColor = System.Drawing.Color.Black;
-            this.txtQuantidade.Location = new System.Drawing.Point(96, 207);
-            this.txtQuantidade.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantidade.Location = new System.Drawing.Point(72, 168);
             this.txtQuantidade.MaxLength = 30;
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.PreventEnterBeep = true;
-            this.txtQuantidade.Size = new System.Drawing.Size(95, 22);
+            this.txtQuantidade.Size = new System.Drawing.Size(71, 20);
             this.txtQuantidade.TabIndex = 11;
             // 
             // txtValorVenda
@@ -771,12 +764,11 @@
             this.txtValorVenda.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtValorVenda.DisabledBackColor = System.Drawing.Color.White;
             this.txtValorVenda.ForeColor = System.Drawing.Color.Black;
-            this.txtValorVenda.Location = new System.Drawing.Point(96, 170);
-            this.txtValorVenda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValorVenda.Location = new System.Drawing.Point(72, 138);
             this.txtValorVenda.MaxLength = 30;
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.PreventEnterBeep = true;
-            this.txtValorVenda.Size = new System.Drawing.Size(158, 22);
+            this.txtValorVenda.Size = new System.Drawing.Size(118, 20);
             this.txtValorVenda.TabIndex = 9;
             // 
             // txtValorPago
@@ -789,12 +781,11 @@
             this.txtValorPago.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtValorPago.DisabledBackColor = System.Drawing.Color.White;
             this.txtValorPago.ForeColor = System.Drawing.Color.Black;
-            this.txtValorPago.Location = new System.Drawing.Point(96, 133);
-            this.txtValorPago.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValorPago.Location = new System.Drawing.Point(72, 108);
             this.txtValorPago.MaxLength = 30;
             this.txtValorPago.Name = "txtValorPago";
             this.txtValorPago.PreventEnterBeep = true;
-            this.txtValorPago.Size = new System.Drawing.Size(158, 22);
+            this.txtValorPago.Size = new System.Drawing.Size(118, 20);
             this.txtValorPago.TabIndex = 7;
             // 
             // txtNome
@@ -807,12 +798,11 @@
             this.txtNome.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNome.DisabledBackColor = System.Drawing.Color.White;
             this.txtNome.ForeColor = System.Drawing.Color.Black;
-            this.txtNome.Location = new System.Drawing.Point(96, 50);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNome.Location = new System.Drawing.Point(72, 41);
             this.txtNome.MaxLength = 30;
             this.txtNome.Name = "txtNome";
             this.txtNome.PreventEnterBeep = true;
-            this.txtNome.Size = new System.Drawing.Size(348, 22);
+            this.txtNome.Size = new System.Drawing.Size(261, 20);
             this.txtNome.TabIndex = 3;
             // 
             // txtdesc
@@ -825,12 +815,11 @@
             this.txtdesc.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdesc.DisabledBackColor = System.Drawing.Color.White;
             this.txtdesc.ForeColor = System.Drawing.Color.Black;
-            this.txtdesc.Location = new System.Drawing.Point(96, 89);
-            this.txtdesc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdesc.Location = new System.Drawing.Point(72, 72);
             this.txtdesc.MaxLength = 30;
             this.txtdesc.Name = "txtdesc";
             this.txtdesc.PreventEnterBeep = true;
-            this.txtdesc.Size = new System.Drawing.Size(348, 22);
+            this.txtdesc.Size = new System.Drawing.Size(261, 20);
             this.txtdesc.TabIndex = 5;
             // 
             // superTabItem2
@@ -842,12 +831,13 @@
             // 
             // FrmProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 424);
+            this.ClientSize = new System.Drawing.Size(596, 344);
             this.Controls.Add(this.Opções);
             this.Controls.Add(this.superTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produto";
